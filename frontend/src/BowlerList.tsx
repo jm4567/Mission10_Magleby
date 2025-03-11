@@ -6,12 +6,12 @@ function BowlerList() {
   const [bowlers, setBowlers] = useState<bowler[]>([]);
 
   useEffect(() => {
-    const fetchFood = async () => {
+    const fetchBowler = async () => {
       const response = await fetch("https://localhost:5000/api/BowlingLeague");
       const data = await response.json();
-      setBowlers(data); //update foods array
+      setBowlers(data); //update bowler array
     };
-    fetchFood();
+    fetchBowler();
   }, []);
 
   return (
