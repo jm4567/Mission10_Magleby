@@ -1,5 +1,5 @@
 import "./App.css";
-import BowlerList from "./bowlerList";
+import BowlerList from "./BowlerList";
 import "bootstrap/dist/css/bootstrap.min.css";
 function Welcome() {
   return (
